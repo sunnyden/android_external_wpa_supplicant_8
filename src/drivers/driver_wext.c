@@ -1040,7 +1040,7 @@ int wpa_driver_wext_scan(void *priv, struct wpa_driver_scan_params *params)
 		 * when scan is complete, so use longer timeout to avoid race
 		 * conditions with scanning and following association request.
 		 */
-		timeout = 30;
+		timeout = 5;
 	}
 	wpa_printf(MSG_DEBUG, "Scan requested (ret=%d) - scan timeout %d "
 		   "seconds", ret, timeout);
